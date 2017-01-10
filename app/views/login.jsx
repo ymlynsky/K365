@@ -18,9 +18,9 @@ class Login extends React.Component {
         </form>
         <div class="row">
           <div class="center-block text-center">
-          <a href="/oauth/facebook">Login with Facebook</a>
+            <a href="/oauth/facebook">Login with Facebook</a>
+          </div>
         </div>
-    </div>
       </DefaultLayout>
     );
   }
