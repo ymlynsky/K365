@@ -6,17 +6,17 @@ class Hello extends React.Component {
     return (
       <DefaultLayout title={this.props.title}>
       	{
-      		this.props.user
-      		?
-      			<div>Hello {this.props.user}
-      				<a href="/logout">Logout</a>
-      			</div>
-      			
-      		:
-      			<div>
-	      			<a href="/register">Register</a>
-					<a href="/login">Login</a>
-				</div>
+  		this.props.user
+  		?
+  			<div>Hello {this.props.user}
+  				<a href="/logout">Logout</a>
+  			</div>
+  			
+  		:
+  			<div>
+      			<a href="/register">Register</a>
+				<a href="/login">Login</a>
+			</div>
       	}
       </DefaultLayout>
     );
