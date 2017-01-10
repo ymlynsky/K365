@@ -21,8 +21,9 @@ module.exports = function() {
 	}));
 
 	app.set('views', './app/views');
-	app.set('view engine', 'ejs');
-
+	app.set('view engine', 'jsx');
+	app.engine('jsx', require('express-react-views').createEngine());
+	
 	app.use(flash());
 	app.use(passport.initialize());
 	app.use(passport.session());
