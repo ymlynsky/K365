@@ -13,7 +13,11 @@ var UserSchema = new Schema({
 	password: String,
 	provider: String,
 	providerId: String,
-	providerData: {}
+	providerData: {},
+    creationdate: {
+        type: Date,
+        default: Date.now
+    },
 });
 
 UserSchema.pre('save', 
